@@ -3,7 +3,7 @@ name: Hello World
 on: [push, pull_request]
 
 jobs:
-  hello-world from nayeem :
+  hello-world :
     runs-on: windows-latest
 
     steps:
