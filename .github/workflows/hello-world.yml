@@ -1,9 +1,9 @@
-name: Hello World from nayeem aiolos
+name: Hello World 
 
 on: [push, pull_request]
 
 jobs:
-  hello-world:
+  hello-world from nayeem:
     runs-on: windows-latest
 
     steps:
