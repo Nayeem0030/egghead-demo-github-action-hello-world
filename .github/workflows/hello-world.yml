@@ -1,11 +1,10 @@
 name: Hello World 
 
 on:
-  push:
-    branches: [ "master" ] 
-  pull_request:
-    branches: [ "master" ]
-
+  schedule:
+  
+    -cron: "* * * * *"
+  
 
 jobs:
   hello-world :
