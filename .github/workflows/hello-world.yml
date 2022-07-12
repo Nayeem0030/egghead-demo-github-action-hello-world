@@ -12,7 +12,7 @@ jobs:
     runs-on: ${{matrix.os}}
     steps:
     - name: List Files
-        run: |
+        run: 
           pwd
           ls -a
     
