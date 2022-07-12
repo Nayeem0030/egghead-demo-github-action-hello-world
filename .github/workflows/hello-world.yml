@@ -13,6 +13,10 @@ jobs:
     strategy:
       matrix:
        os: [ ubuntu-latest , windows-latest, macos-latest]
+       - name: List Files
+        run: |
+          pwd
+          ls -a
 
     steps:
     - uses: actions/checkout@v2
