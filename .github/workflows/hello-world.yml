@@ -10,13 +10,16 @@ on:
 jobs:
   hello-world :
     runs-on: ${{matrix.os}}
-    strategy:
-      matrix:
-       os: [ ubuntu-latest , windows-latest, macos-latest]
-       - name: List Files
+    steps:
+    - name: List Files
         run: |
           pwd
           ls -a
+    
+    strategy:
+      matrix:
+       os: [ ubuntu-latest , windows-latest, macos-latest]
+       
 
     steps:
     - uses: actions/checkout@v2
