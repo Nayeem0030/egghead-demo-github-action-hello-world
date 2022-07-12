@@ -1,9 +1,6 @@
 name: Hello World
 
 on: [push, pull_request]
-  schedule:
-     - cron: "0/5 * * * *" 
-  
 
 jobs:
   hello-world :
